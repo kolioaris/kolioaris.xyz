@@ -1,0 +1,3 @@
+Right-Click on CS2 (in Steam Library), press Properties, then in the Launch Options paste this:
+
+-novid -tickrate 128 -console -nojoy +fps_max 0 -high +cl_forcepreload 1 -forcepreload 1 -threads 5 -mat_queue_mode 2 +violence_hblood 0 -allow_third_party_software
