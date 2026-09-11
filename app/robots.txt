@@ -1,0 +1,23 @@
+User-agent: Googlebot
+Disallow: 
+User-agent: Googlebot-Image
+Disallow: 
+User-agent: Bingbot
+Disallow: 
+User-agent: Yandex
+Disallow: 
+User-agent: Baiduspider
+Disallow: 
+User-agent: Yeti
+Disallow: 
+User-agent: Applebot
+Disallow: 
+User-agent: DuckDuckBot
+Disallow: 
+User-agent: Slurp
+Disallow: 
+User-agent: archive.org_bot
+Disallow: 
+User-agent: *
+Disallow: /
+Disallow: /cgi-bin/

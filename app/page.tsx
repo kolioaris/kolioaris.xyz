@@ -9,13 +9,55 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import Topbar from "@/components/topbar"
+import ASCIIText from "@/components/ASCIIText"
+import Topography from "@/components/Topography"
 
 export default function Page() {
   return (
     <>
+      <div
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: -1,
+          pointerEvents: "none",
+        }}
+      >
+        <Topography
+          lowColor="#ff0000"
+          midColor="#ff8b8b"
+          highColor="#FFFFFF"
+          speed={0.25}
+          morphAmount={3}
+          morphSpeed={0.05}
+          bands={2}
+          thickness={0.01}
+          scale={2}
+          pixelSize={1}
+          glow={0.5}
+          colorMode="elevation"
+          contrast={3}
+          brightness={1}
+          fillBands={false}
+          opacity={0.5}
+          grain
+          grainIntensity={0.05}
+          mouseInteraction
+          mouseRadius={0.3}
+          mouseStrength={0.1}
+        />
+      </div>
       <Topbar />
-      <h1 className="mt-8 text-center text-5xl font-bold underline">Hello!</h1>
-      <p className="mt-6 text-center text-xl">
+      <div className="relative h-40 w-full overflow-hidden">
+        <ASCIIText
+          text="Hello!"
+          enableWaves={false}
+          asciiFontSize={3}
+          textFontSize={240}
+          planeBaseHeight={9}
+        />
+      </div>
+      <p className="mt-2 text-center text-xl">
         I am kolioaris! A guy who loves coding and gaming!
       </p>
       <div className="mt-4 flex justify-center">
@@ -57,7 +99,8 @@ export default function Page() {
         From a very young age, I was interested in technology. Yeah. I
         don&apos;t know what else to type here lol. I will just start telling
         some fun facts about me. I like starting sentences with the word
-        &quot;So,&quot; and I swear <span className="italic">(a lot)</span>.
+        &quot;So,&quot;. I don't know what else to say here. So, have a good
+        rest of your day, reader!
       </p>
       <div className="mt-12 flex items-center justify-center gap-6 px-6 sm:gap-8 md:gap-10">
         <div
@@ -80,7 +123,7 @@ export default function Page() {
           }}
         />
       </div>
-      <div className="mx-16 my-8 grid grid-cols-1 gap-16 md:grid-cols-2">
+      <div className="mx-16 my-8 grid grid-cols-1 gap-16 opacity-80 md:grid-cols-2">
         <Card>
           <CardHeader>
             <CardTitle className="text-xl font-semibold">sh-conv</CardTitle>
